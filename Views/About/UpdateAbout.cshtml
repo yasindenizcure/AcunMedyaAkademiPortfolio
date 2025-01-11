@@ -1,0 +1,20 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkında Güncelleme</h2>
+<form method="post">
+    <label>Hakkında ID</label>
+    @Html.TextBoxFor(x => x.AboutId, new { @class = "form-control" })
+    <br />
+    <label>Hakkında Açıklaması</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Hakkında Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Referansı Güncelle</button>
+    </form>
+

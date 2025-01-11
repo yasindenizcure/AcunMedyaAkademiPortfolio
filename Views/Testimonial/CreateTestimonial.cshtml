@@ -1,0 +1,24 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Referans Ekleme</h2>
+@using (Html.BeginForm("UpdateProject", "Project", FormMethod.Post))
+{ <form method="post">
+        <label>Referans İsmi</label>
+        @Html.TextBoxFor(x => x.testimonialName, new { @class = "form-control" })
+
+        <label>Referans Mesleği</label>
+        @Html.TextBoxFor(x => x.testimonialTitle, new { @class = "form-control" })
+
+        <label>Referans Açıklaması</label>
+        @Html.TextBoxFor(x => x.testimonialDescription, new { @class = "form-control" })
+
+        <label>Referans Resmi</label>
+        @Html.TextBoxFor(x => x.testimonialImageUrl, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Referansı Kaydet</button>
+    </form>
+}

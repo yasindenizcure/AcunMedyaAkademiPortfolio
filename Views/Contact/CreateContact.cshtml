@@ -1,0 +1,28 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblContact
+@{
+    ViewBag.Title = "CreateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni İletişim Ekleme</h2>
+<form method="post">
+    <label>İletişim ID</label>
+    @Html.TextBoxFor(x => x.ContactId, new { @class = "form-control" })
+
+    <label>İsim</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+    <label>E-Mail</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+
+    <label>Tarih</label>
+    @Html.TextBoxFor(x => x.CreateDate, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">İletişimi Kaydet</button>
+</form>

@@ -1,0 +1,20 @@
+﻿@model  AcunMedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Hakkında Ekleme</h2>
+<form method="post">
+    <label>Hakkında ID'si</label>
+    @Html.TextBoxFor(x => x.AboutId, new { @class = "form-control" })
+
+    <label>Hakkında Başlığı</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+
+    <label>Hakkında Açıklaması</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Hakkında Kaydet</button>
+</form>
+
