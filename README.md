@@ -1,4 +1,4 @@
-![1](https://github.com/user-attachments/assets/41789443-9a2c-4b3c-bd66-36e6a387cd20)![2](https://github.com/user-attachments/assets/78cc489b-c976-4f96-88c1-774612599735)# AcunMedyaAkademiPortfolio
+# AcunMedyaAkademiPortfolio
 🚀 Acunmedya Akademi başladığım C# programlama eğitim yolculuğumdaki ilk projem olan Admin Panelli Portfolyo projemi paylaşmaktan mutluluk duyuyorum. 😎 
 
 💥 Admin Paneli Kısmı 💥 
