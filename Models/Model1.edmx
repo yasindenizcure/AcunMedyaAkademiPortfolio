@@ -116,6 +116,15 @@
           <Property Name="LastWeekValue" Type="tinyint" />
           <Property Name="LastMonthValue" Type="tinyint" />
         </EntityType>
+        <EntityType Name="TblSocialMedia">
+          <Key>
+            <PropertyRef Name="SocialMediaId" />
+          </Key>
+          <Property Name="SocialMediaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Platform" Type="varchar" MaxLength="50" />
+          <Property Name="PlatformUrl" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl" Type="varchar" MaxLength="100" />
+        </EntityType>
         <EntityType Name="TblTestimonial">
           <Key>
             <PropertyRef Name="testimonialId" />
@@ -185,6 +194,7 @@
           <EntitySet Name="TblProject" EntityType="Self.TblProject" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblService" EntityType="Self.TblService" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSkill" EntityType="Self.TblSkill" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblSocialMedia" EntityType="Self.TblSocialMedia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblTestimonial" EntityType="Self.TblTestimonial" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TblProject_TblCategory1" Association="Self.FK_TblProject_TblCategory1">
             <End Role="TblCategory" EntitySet="TblCategory" />
@@ -381,6 +391,7 @@
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
           <FunctionImport Name="GetLastSkillTitle1" ReturnType="Collection(String)" />
+          <EntitySet Name="TblSocialMedia" EntityType="DbPortfolioModel.TblSocialMedia" />
         </EntityContainer>
         <ComplexType Name="GetLastSkillTitle_Result">
           <Property Type="Int32" Name="SkillId" Nullable="false" />
@@ -400,6 +411,15 @@
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
+        <EntityType Name="TblSocialMedia">
+          <Key>
+            <PropertyRef Name="SocialMediaId" />
+          </Key>
+          <Property Name="SocialMediaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Platform" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PlatformUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IconUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -577,6 +597,16 @@
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbPortfolioModel.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbPortfolioModel.Store.sp_upgraddiagrams" />
           <FunctionImportMapping FunctionImportName="GetLastSkillTitle1" FunctionName="DbPortfolioModel.Store.GetLastSkillTitle1" />
+          <EntitySetMapping Name="TblSocialMedia">
+            <EntityTypeMapping TypeName="DbPortfolioModel.TblSocialMedia">
+              <MappingFragment StoreEntitySet="TblSocialMedia">
+                <ScalarProperty Name="IconUrl" ColumnName="IconUrl" />
+                <ScalarProperty Name="PlatformUrl" ColumnName="PlatformUrl" />
+                <ScalarProperty Name="Platform" ColumnName="Platform" />
+                <ScalarProperty Name="SocialMediaId" ColumnName="SocialMediaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

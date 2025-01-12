@@ -1,0 +1,24 @@
+﻿﻿@model List<AcunMedyaAkademiPortfolio.Models.TblAdress>
+<div class="col-md">
+    <div class="col-md-4 d-flex pl-md-5">
+        <div class="row">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Başka sorunuz?</h2>
+                    <div class="block-23 mb-3">
+                        @foreach (var item in Model)
+
+                        {
+                            <ul>
+                                <li><span class="icon fa fa-map marker"></span><span class="text">@item.Adress</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">@item.Phone</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">@item.Email</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">@item.Website</span></a></li>
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

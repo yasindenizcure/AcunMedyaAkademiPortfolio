@@ -141,6 +141,7 @@
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SkillController.cs" />
+    <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Global.asax.cs">
@@ -204,6 +205,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TblSkill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TblSocialMedia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TblTestimonial.cs">
@@ -287,14 +291,37 @@
     <Content Include="Template\clyde-master\images\bg_2.jpg" />
     <Content Include="Template\clyde-master\images\bg_3.jpg" />
     <Content Include="Template\clyde-master\images\bg_4.jpg" />
+    <Content Include="Template\clyde-master\images\busedemirtas.jfif" />
+    <Content Include="Template\clyde-master\images\code.jpg" />
+    <Content Include="Template\clyde-master\images\csharp.png" />
+    <Content Include="Template\clyde-master\images\eating.png" />
+    <Content Include="Template\clyde-master\images\esracufadaroglu.jfif" />
+    <Content Include="Template\clyde-master\images\flutter.png" />
+    <Content Include="Template\clyde-master\images\github.png" />
+    <Content Include="Template\clyde-master\images\gokhanmutlay.jfif" />
     <Content Include="Template\clyde-master\images\image_1.jpg" />
     <Content Include="Template\clyde-master\images\image_2.jpg" />
     <Content Include="Template\clyde-master\images\image_3.jpg" />
+    <Content Include="Template\clyde-master\images\instagram.png" />
+    <Content Include="Template\clyde-master\images\jaime.jpg" />
+    <Content Include="Template\clyde-master\images\linkedin.png" />
     <Content Include="Template\clyde-master\images\loc.png" />
+    <Content Include="Template\clyde-master\images\mobile.png" />
+    <Content Include="Template\clyde-master\images\movie.png" />
+    <Content Include="Template\clyde-master\images\muratyucedag.jfif" />
+    <Content Include="Template\clyde-master\images\music.png" />
     <Content Include="Template\clyde-master\images\person_1.jpg" />
     <Content Include="Template\clyde-master\images\person_2.jpg" />
     <Content Include="Template\clyde-master\images\person_3.jpg" />
     <Content Include="Template\clyde-master\images\person_4.jpg" />
+    <Content Include="Template\clyde-master\images\pp3.jpg" />
+    <Content Include="Template\clyde-master\images\skill.PNG" />
+    <Content Include="Template\clyde-master\images\soccer.png" />
+    <Content Include="Template\clyde-master\images\travel.png" />
+    <Content Include="Template\clyde-master\images\turrehberi.png" />
+    <Content Include="Template\clyde-master\images\uiuxx.png" />
+    <Content Include="Template\clyde-master\images\unity.png" />
+    <Content Include="Template\clyde-master\images\wallpaper.jpg" />
     <Content Include="Template\clyde-master\images\work-1.jpg" />
     <Content Include="Template\clyde-master\images\work-2.jpg" />
     <Content Include="Template\clyde-master\images\work-3.jpg" />
@@ -600,6 +627,20 @@
     <Content Include="Views\Default\PartialAbout.cshtml" />
     <Content Include="Views\Default\PartialSkill.cshtml" />
     <Content Include="Views\Default\PartialStatistic.cshtml" />
+    <Content Include="Views\Default\PartialProfile.cshtml" />
+    <Content Include="Views\Default\PartialProject.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Template\clyde-master\images\yasin cüre cv.docx" />
+    <Content Include="Views\Default\PartialAdress.cshtml" />
+    <Content Include="Views\Default\PartialScript.cshtml" />
+    <Content Include="Views\SocialMedia\CreateSocialMedia.cshtml" />
+    <Content Include="Views\SocialMedia\UpdateSocialMedia.cshtml" />
+    <Content Include="Views\SocialMedia\Index.cshtml" />
+    <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\Default\PartialFooterService.cshtml" />
+    <Content Include="Views\Default\PartialHobby.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

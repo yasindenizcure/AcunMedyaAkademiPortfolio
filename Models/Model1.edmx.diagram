@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b475ce08e30b4c6d8aa0d06bfd714b6d" Name="Diagram1" ZoomLevel="53">
+      <Diagram DiagramId="b475ce08e30b4c6d8aa0d06bfd714b6d" Name="Diagram1" ZoomLevel="58">
         <EntityTypeShape EntityType="DbPortfolioModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblAbout" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolioModel.TblAdress" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />

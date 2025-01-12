@@ -17,7 +17,11 @@ namespace AcunMedyaAkademiPortfolio.Controllers
             ViewBag.skillCount = db.TblSkill.Count();
             ViewBag.skillAvgValue = db.TblSkill.Average(x=> x.Value);
             ViewBag.lastSkillTitleName = db.GetLastSkillTitle1().FirstOrDefault();
-            ViewBag.mvcCategoryProjectCount = db.TblProject.Where(x=> x.ProjectCategory==4).Count();
+            ViewBag.mvcCategoryProjectCount = db.TblProject.Where(x=> x.ProjectCategory==1).Count();
+            ViewBag.mvcCategoryProjectCount2 = db.TblProject.Where(x=> x.ProjectCategory==2).Count();
+            ViewBag.mvcCategoryProjectCount3 = db.TblProject.Where(x=> x.ProjectCategory==3).Count();
+            ViewBag.mvcCategoryProjectCount4 = db.TblProject.Where(x=> x.ProjectCategory==4).Count();
+            ViewBag.mvcCategoryProjectCount5 = db.TblProject.Where(x=> x.ProjectCategory==5).Count();
             return View();
         }
     }
