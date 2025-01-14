@@ -11,7 +11,7 @@
 
 ● Layout Kontrolü
 
-● Db First yaklaşımı
+● Db First yaklaşım
 
 ● Partial View Kullanımı
 
@@ -20,6 +20,7 @@
 ● Entity Framework Sorguları
 
 ● Bootstrap Kullanımı
+
 -------------------------------------
 Anasayfa Kısmı💪 
 ![1](https://github.com/user-attachments/assets/5d094433-18cc-48b9-8320-152c660d8956)
